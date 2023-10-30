@@ -213,6 +213,7 @@ $helpButtonActiveBorderColor:scale-color($helpButtonBg, $lightness: -20%) !defau
 $helpButtonFocusShadow:0 0 0 0.2rem scale-color($helpButtonBg, $lightness: 60%) !default;
 
 $dangerButtonBg:#D32F2F !default;
+$dangerButtonBgAlt: #a10000 !default;
 $dangerButtonTextColor:#ffffff !default;
 $dangerButtonBorder:1px solid $dangerButtonBg !default;
 $dangerButtonHoverBg:scale-color($dangerButtonBg, $lightness: -10%) !default;
