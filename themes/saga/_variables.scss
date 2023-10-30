@@ -124,9 +124,10 @@ $passwordStrongBg:#689F38 !default;
 $buttonPadding:.5rem 1rem !default;
 $buttonIconOnlyWidth:2.357rem !default;
 $buttonIconOnlyPadding:.5rem 0 !default;
-$buttonBg:$primaryColor !default;
+$buttonBg:$shade800 !default;
 $buttonTextColor:$primaryTextColor !default;
-$buttonBorder:1px solid $primaryColor !default;
+$buttonFontWeight: 600 !default;
+$buttonBorder:1px solid $shade800 !default;
 $buttonHoverBg:$primaryDarkColor !default;
 $buttonTextHoverColor:$primaryTextColor !default;
 $buttonHoverBorderColor:$primaryDarkColor !default;
@@ -138,12 +139,12 @@ $roundedButtonBorderRadius:2rem !default;
 
 $textButtonHoverBgOpacity:.04 !default;
 $textButtonActiveBgOpacity:.16 !default;
-$outlinedButtonBorder:1px solid !default;
+$outlinedButtonBorder:1px solid $shade300 !default;
 $plainButtonTextColor:$textSecondaryColor !default;
 $plainButtonHoverBgColor:$shade200 !default;
 $plainButtonActiveBgColor:$shade300 !default;
 
-$secondaryButtonBg:#607D8B !default;
+$secondaryButtonBg:$shade700 !default;
 $secondaryButtonTextColor:#ffffff !default;
 $secondaryButtonBorder:1px solid $secondaryButtonBg !default;
 $secondaryButtonHoverBg:scale-color($secondaryButtonBg, $lightness: -10%) !default;
