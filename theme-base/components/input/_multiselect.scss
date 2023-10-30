@@ -183,6 +183,15 @@ p-multiselect.ng-invalid {
     }
 }
 
+p-multiselect.ng-invalid.has-warning {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-multiselect {
+            @include warned-input();
+        }
+    }
+}
+
 p-multiselect.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {

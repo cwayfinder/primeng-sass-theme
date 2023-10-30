@@ -36,6 +36,15 @@
     }
 }
 
+@mixin warned-input() {
+  border-color: $inputWarningBorderColor;
+
+  &:focus,
+  &.p-focus {
+    box-shadow: $inputWarningFocusShadow;
+  }
+}
+
 @mixin valid-input() {
     border-color: $inputSuccessBorderColor;
 

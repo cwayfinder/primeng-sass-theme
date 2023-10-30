@@ -137,6 +137,15 @@ p-dropdown.ng-invalid {
     }
 }
 
+p-dropdown.ng-invalid.has-warning {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-dropdown {
+            @include warned-input();
+        }
+    }
+}
+
 p-dropdown.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {

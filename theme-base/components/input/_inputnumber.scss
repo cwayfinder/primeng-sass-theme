@@ -7,6 +7,15 @@ p-inputnumber.ng-invalid {
     }
 }
 
+p-inputnumber.ng-invalid.has-warning {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-inputnumber > .p-inputtext {
+            @include warned-input();
+        }
+    }
+}
+
 p-inputnumber.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {

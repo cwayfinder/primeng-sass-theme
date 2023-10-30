@@ -25,6 +25,13 @@
         }
     }
 
+    &.ng-invalid.has-warning {
+        &.ng-dirty,
+        &.ng-touched {
+            @include warned-input();
+        }
+    }
+
     &.has-feedback.ng-valid {
         &.ng-touched,
         &.ng-dirty {
