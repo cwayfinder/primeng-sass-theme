@@ -17,6 +17,7 @@
 
         &:not(.p-disabled).p-focus {
             @include focused-input();
+            border-color: $primaryColor;
         }
 
         .p-radiobutton-icon {

@@ -43,13 +43,14 @@ $disabledOpacity:.6 !default;
 $maskBg:rgba(0, 0, 0, 0.4) !default;
 $loadingIconFontSize:2rem !default;
 $errorColor:#f44336 !default;
+$successColor: #10b981 !default;
 
 //scale
 $scaleSM:0.875 !default;
 $scaleLG:1.25 !default;
 
 //focus
-$focusOutlineColor:$primaryLightColor !default;
+$focusOutlineColor:$shade300 !default;
 $focusOutline:0 none !default;
 $focusOutlineOffset:0 !default;
 $focusShadow:0 0 0 0.2rem $focusOutlineColor !default;
@@ -73,13 +74,16 @@ $inputBg:$shade000 !default;
 $inputTextColor:$shade700 !default;
 $inputIconColor:$shade600 !default;
 $inputBorder:1px solid $shade400 !default;
-$inputHoverBorderColor:$primaryColor !default;
-$inputFocusBorderColor:$primaryColor !default;
+$inputHoverBorderColor:$shade500 !default;
+$inputFocusBorderColor:$shade600 !default;
 $inputErrorBorderColor:$errorColor !default;
+$inputSuccessBorderColor: $successColor !default;
 $inputPlaceholderTextColor:$shade600 !default;
 $inputFilledBg:$shade100 !default;
 $inputFilledHoverBg:$inputFilledBg !default;
 $inputFilledFocusBg:$shade000 !default;
+$inputErrorFocusShadow: 0 0 0 0.2rem mix(#fff, $errorColor, 80%) !default;
+$inputSuccessFocusShadow: 0 0 0 0.2rem mix(#fff, $successColor, 80%) !default;
 
 //input groups
 $inputGroupBg:$shade200 !default;

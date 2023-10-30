@@ -42,8 +42,22 @@
     }
 }
 
-p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
-    @include invalid-input();
+p-treeselect.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-treeselect {
+            @include invalid-input();
+        }
+    }
+}
+
+p-treeselect.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-treeselect {
+            @include valid-input();
+        }
+    }
 }
 
 .p-inputwrapper-filled {

@@ -25,6 +25,13 @@
         }
     }
 
+    &.ng-valid {
+        &.ng-touched,
+        &.ng-dirty {
+            @include valid-input();
+        }
+    }
+
     &.p-inputtext-sm {
         @include scaledFontSize($inputTextFontSize, $scaleSM);
         @include scaledPadding($inputPadding, $scaleSM);

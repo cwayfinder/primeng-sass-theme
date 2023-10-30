@@ -7,6 +7,15 @@ p-inputnumber.ng-invalid {
     }
 }
 
+p-inputnumber.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-inputnumber > .p-inputtext {
+            @include valid-input();
+        }
+    }
+}
+
 p-inputnumber.p-inputnumber-clearable {
     .p-inputnumber-input {
         padding-right: nth($inputPadding, 2) * 2 + $primeIconFontSize;

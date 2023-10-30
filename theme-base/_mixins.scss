@@ -28,7 +28,21 @@
 }
 
 @mixin invalid-input() {
-	border-color: $inputErrorBorderColor;
+    border-color: $inputErrorBorderColor;
+
+    &:focus,
+    &.p-focus {
+        box-shadow: $inputErrorFocusShadow;
+    }
+}
+
+@mixin valid-input() {
+    border-color: $inputSuccessBorderColor;
+
+    &:focus,
+    &.p-focus {
+        box-shadow: $inputSuccessFocusShadow;
+    }
 }
 
 @mixin menuitem-link {

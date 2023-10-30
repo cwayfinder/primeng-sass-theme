@@ -137,6 +137,15 @@ p-dropdown.ng-invalid {
     }
 }
 
+p-dropdown.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-dropdown {
+            @include valid-input();
+        }
+    }
+}
+
 .p-input-filled {
     .p-dropdown {
         background: $inputFilledBg;

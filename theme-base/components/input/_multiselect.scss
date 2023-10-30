@@ -182,3 +182,12 @@ p-multiselect.ng-invalid {
         }
     }
 }
+
+p-multiselect.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-multiselect {
+            @include valid-input();
+        }
+    }
+}

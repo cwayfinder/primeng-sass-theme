@@ -7,6 +7,15 @@ p-calendar.ng-invalid {
     }
 }
 
+p-calendar.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-calendar > .p-inputtext {
+            @include valid-input();
+        }
+    }
+}
+
 .p-datepicker {
     padding: $calendarPadding;
     background: $calendarInlineBg;

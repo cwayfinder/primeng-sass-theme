@@ -122,6 +122,15 @@ p-autocomplete.ng-invalid {
     }
 }
 
+p-autocomplete.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-autocomplete > .p-inputtext {
+            @include valid-input();
+        }
+    }
+}
+
 p-autocomplete.p-autocomplete-clearable {
     .p-inputtext {
         padding-right: nth($inputPadding, 2) * 2 + $primeIconFontSize;

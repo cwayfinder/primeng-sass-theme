@@ -48,6 +48,15 @@ p-chips.ng-invalid {
     }
 }
 
+p-chips.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-chips > .p-inputtext {
+            @include valid-input();
+        }
+    }
+}
+
 p-chips.p-chips-clearable {
     .p-inputtext {
         padding-right: nth($inputPadding, 2) + $primeIconFontSize;

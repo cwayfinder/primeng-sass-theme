@@ -95,6 +95,15 @@ p-cascadeselect.ng-invalid {
     }
 }
 
+p-cascadeselect.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-cascadeselect {
+            @include valid-input();
+        }
+    }
+}
+
 .p-input-filled {
     .p-cascadeselect {
         background: $inputFilledBg;

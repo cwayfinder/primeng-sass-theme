@@ -56,6 +56,15 @@ p-checkbox.ng-invalid {
     }
 }
 
+p-checkbox.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-checkbox > .p-checkbox-box {
+            @include valid-input();
+        }
+    }
+}
+
 .p-input-filled {
     .p-checkbox {
         .p-checkbox-box {

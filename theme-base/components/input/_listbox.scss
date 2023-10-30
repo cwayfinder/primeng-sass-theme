@@ -100,3 +100,12 @@ p-listbox.ng-invalid {
         }
     }
 }
+
+p-listbox.ng-valid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-listbox {
+            @include valid-input();
+        }
+    }
+}
