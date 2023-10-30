@@ -143,12 +143,18 @@ $roundedButtonBorderRadius:2rem !default;
 
 $textButtonHoverBgOpacity:.04 !default;
 $textButtonActiveBgOpacity:.16 !default;
+$outlinedButtonBg: #ffffff !default;
+$outlinedButtonTextColor: $shade800 !default;
 $outlinedButtonBorder:1px solid $shade300 !default;
+$outlinedButtonActiveTextColor: $primaryColor !default;
+$outlinedButtonActiveBorder: 1px solid $primaryColor !default;
+$outlinedButtonFocusBorderColor: scale-color($primaryColor, $lightness: 60%) !default;
+$outlinedButtonFocusShadow: 0 0 0 0.2rem scale-color($primaryColor, $lightness: 60%) !default;
 $plainButtonTextColor:$textSecondaryColor !default;
 $plainButtonHoverBgColor:$shade200 !default;
 $plainButtonActiveBgColor:$shade300 !default;
 
-$secondaryButtonBg:$shade700 !default;
+$secondaryButtonBg:$shade800 !default;
 $secondaryButtonTextColor:#ffffff !default;
 $secondaryButtonBorder:1px solid $secondaryButtonBg !default;
 $secondaryButtonHoverBg:scale-color($secondaryButtonBg, $lightness: -10%) !default;
@@ -157,7 +163,7 @@ $secondaryButtonHoverBorderColor:scale-color($secondaryButtonBg, $lightness: -10
 $secondaryButtonActiveBg:scale-color($secondaryButtonBg, $lightness: -20%) !default;
 $secondaryButtonTextActiveColor:$secondaryButtonTextColor !default;
 $secondaryButtonActiveBorderColor:scale-color($secondaryButtonBg, $lightness: -20%) !default;
-$secondaryButtonFocusShadow:0 0 0 0.2rem scale-color($secondaryButtonBg, $lightness: 60%) !default;
+$secondaryButtonFocusShadow:0 0 0 0.2rem scale-color($primaryColor, $lightness: 60%) !default;
 
 $infoButtonBg:#0288D1 !default;
 $infoButtonTextColor:#ffffff !default;

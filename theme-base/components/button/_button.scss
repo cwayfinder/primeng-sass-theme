@@ -21,20 +21,27 @@
     }
 
     &.p-button-outlined {
-        background-color: transparent;
-        color: $buttonBg;
+        background-color: $outlinedButtonBg;
+        color: $outlinedButtonTextColor;
         border: $outlinedButtonBorder;
 
+        &:enabled:focus {
+            background-color: $outlinedButtonBg;
+            color: $outlinedButtonActiveTextColor;
+            border-color: $outlinedButtonFocusBorderColor;
+            box-shadow: $outlinedButtonFocusShadow;
+        }
+
         &:enabled:hover {
-            background: rgba($buttonBg, $textButtonHoverBgOpacity);
-            color: $buttonBg;
-            border: $outlinedButtonBorder;
+            background-color: $outlinedButtonBg;
+            color: $outlinedButtonActiveTextColor;
+            border: $outlinedButtonActiveBorder;
         }
 
         &:enabled:active {
-            background: rgba($buttonBg, $textButtonActiveBgOpacity);
-            color: $buttonBg;
-            border: $outlinedButtonBorder;
+            background-color: $outlinedButtonBg;
+            color: $outlinedButtonActiveTextColor;
+            border: $outlinedButtonActiveBorder;
         }
 
         &.p-button-plain {
@@ -90,7 +97,6 @@
     }
 
     .p-button-label {
-        transition-duration: $transitionDuration;
     }
 
     .p-button-icon-left {
@@ -210,20 +216,26 @@
     }
 
     &.p-button-outlined {
-        background-color: transparent;
+        background-color: $outlinedButtonBg;
         color: $secondaryButtonBg;
         border: $outlinedButtonBorder;
 
+        &:enabled:focus {
+            background-color: $outlinedButtonBg;
+            color: $outlinedButtonActiveTextColor;
+            border-color: $outlinedButtonFocusBorderColor;
+        }
+
         &:enabled:hover {
-            background: rgba($secondaryButtonBg, $textButtonHoverBgOpacity);
-            color: $secondaryButtonBg;
-            border: $outlinedButtonBorder;
+            background-color: $outlinedButtonBg;
+            color: $outlinedButtonActiveTextColor;
+            border: $outlinedButtonActiveBorder;
         }
 
         &:enabled:active {
-            background: rgba($secondaryButtonBg, $textButtonActiveBgOpacity);
-            color: $secondaryButtonBg;
-            border: $outlinedButtonBorder;
+            background-color: $outlinedButtonBg;
+            color: $outlinedButtonActiveTextColor;
+            border: $outlinedButtonActiveBorder;
         }
     }
 
