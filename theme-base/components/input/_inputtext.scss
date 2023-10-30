@@ -25,7 +25,7 @@
         }
     }
 
-    &.ng-valid {
+    &.has-feedback.ng-valid {
         &.ng-touched,
         &.ng-dirty {
             @include valid-input();

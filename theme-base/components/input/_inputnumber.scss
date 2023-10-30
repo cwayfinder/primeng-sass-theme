@@ -7,7 +7,7 @@ p-inputnumber.ng-invalid {
     }
 }
 
-p-inputnumber.ng-valid {
+p-inputnumber.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-inputnumber > .p-inputtext {

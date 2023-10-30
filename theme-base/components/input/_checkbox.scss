@@ -56,7 +56,7 @@ p-checkbox.ng-invalid {
     }
 }
 
-p-checkbox.ng-valid {
+p-checkbox.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-checkbox > .p-checkbox-box {

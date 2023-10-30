@@ -95,7 +95,7 @@ p-cascadeselect.ng-invalid {
     }
 }
 
-p-cascadeselect.ng-valid {
+p-cascadeselect.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-cascadeselect {

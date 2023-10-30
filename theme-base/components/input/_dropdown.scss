@@ -137,7 +137,7 @@ p-dropdown.ng-invalid {
     }
 }
 
-p-dropdown.ng-valid {
+p-dropdown.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-dropdown {

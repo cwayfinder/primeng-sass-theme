@@ -7,7 +7,7 @@ p-calendar.ng-invalid {
     }
 }
 
-p-calendar.ng-valid {
+p-calendar.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-calendar > .p-inputtext {

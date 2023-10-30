@@ -51,7 +51,7 @@ p-treeselect.ng-invalid {
     }
 }
 
-p-treeselect.ng-valid {
+p-treeselect.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-treeselect {

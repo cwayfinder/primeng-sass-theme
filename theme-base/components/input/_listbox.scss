@@ -101,7 +101,7 @@ p-listbox.ng-invalid {
     }
 }
 
-p-listbox.ng-valid {
+p-listbox.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-listbox {

@@ -9,7 +9,7 @@ p-inputmask.ng-invalid {
     }
 }
 
-p-inputmask.ng-valid {
+p-inputmask.has-feedback.ng-valid {
     &.ng-dirty,
     &.ng-touched {
         & > .p-inputtext {
