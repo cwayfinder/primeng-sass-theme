@@ -39,8 +39,13 @@
     }
 }
 
-p-chips.ng-dirty.ng-invalid > .p-chips > .p-inputtext {
-    @include invalid-input();
+p-chips.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-chips > .p-inputtext {
+            @include invalid-input();
+        }
+    }
 }
 
 p-chips.p-chips-clearable {

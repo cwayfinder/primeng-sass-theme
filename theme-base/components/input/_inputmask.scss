@@ -1,7 +1,12 @@
 @use 'sass:math';
 
-p-inputmask.ng-dirty.ng-invalid > .p-inputtext {
-    @include invalid-input();
+p-inputmask.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-inputtext {
+            @include invalid-input();
+        }
+    }
 }
 
 p-inputmask.p-inputmask-clearable {

@@ -55,6 +55,11 @@
     }
 }
 
-p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch {
-    @include invalid-input();
+p-inputswitch.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-inputswitch {
+            @include invalid-input();
+        }
+    }
 }

@@ -86,8 +86,13 @@
     }
 }
 
-p-cascadeselect.ng-dirty.ng-invalid > .p-cascadeselect {
-    @include invalid-input();
+p-cascadeselect.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-cascadeselect {
+            @include invalid-input();
+        }
+    }
 }
 
 .p-input-filled {

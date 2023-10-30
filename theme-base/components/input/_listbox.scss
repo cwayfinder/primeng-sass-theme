@@ -92,6 +92,11 @@
     }
 }
 
-p-listbox.ng-dirty.ng-invalid > .p-listbox {
-    @include invalid-input();
+p-listbox.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-listbox {
+            @include invalid-input();
+        }
+    }
 }

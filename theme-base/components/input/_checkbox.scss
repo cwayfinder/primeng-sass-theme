@@ -47,8 +47,13 @@
     }
 }
 
-p-checkbox.ng-dirty.ng-invalid > .p-checkbox > .p-checkbox-box {
-    @include invalid-input();
+p-checkbox.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-checkbox > .p-checkbox-box {
+            @include invalid-input();
+        }
+    }
 }
 
 .p-input-filled {

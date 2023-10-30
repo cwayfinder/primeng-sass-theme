@@ -1,5 +1,10 @@
-p-inputnumber.ng-dirty.ng-invalid > .p-inputnumber > .p-inputtext {
-    @include invalid-input();
+p-inputnumber.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-inputnumber > .p-inputtext {
+            @include invalid-input();
+        }
+    }
 }
 
 p-inputnumber.p-inputnumber-clearable {

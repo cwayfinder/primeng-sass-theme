@@ -39,8 +39,13 @@
     }
 }
 
-p-radiobutton.ng-dirty.ng-invalid > .p-radiobutton > .p-radiobutton-box {
-    @include invalid-input();
+p-radiobutton.ng-invalid {
+    &.ng-dirty,
+    &.ng-touched {
+        & > .p-radiobutton > .p-radiobutton-box {
+            @include invalid-input();
+        }
+    }
 }
 
 .p-input-filled {
