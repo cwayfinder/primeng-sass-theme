@@ -1,10 +1,10 @@
-$primaryColor: #2196F3 !default;
+$primaryColor: #f1a776 !default;
 $primaryLightColor: scale-color($primaryColor, $lightness: 60%) !default;
 $primaryDarkColor: scale-color($primaryColor, $lightness: -10%) !default;
 $primaryDarkerColor: scale-color($primaryColor, $lightness: -20%) !default;
 $primaryTextColor: #ffffff !default;
 
-$highlightBg: #E3F2FD !default;
+$highlightBg: #fff3e0 !default;
 $highlightTextColor: #495057 !default;
 $highlightFocusBg: rgba($primaryColor, .24) !default;
 
